@@ -43,15 +43,12 @@ The below list only exposes some of the many registers.
   - A 32-bit register is the set of the 32 lower (rightmost) bits of a 64-bit
     register. Similarly, a 16-bit register and an 8-bit register consist of the
     lowest 16 and lowest 8 bits, respectively, of the 64-bit register.
-
 - **Instruction pointer register (rip)**
   - The processor keeps track of the next instruction to be executed by storing
     the address of the next instruction in rip.
-
 - **Flag Register**
   - After executing an instruction, a program can check whether a certain flag
     is set (e.g., ZF=1) and then act accordingly.
-
 - **xmm and ymm Registers**
   - These registers are used for floating-point calculations and SIMD (Single
     Instruction/Multiple Data).
@@ -66,30 +63,23 @@ you can use inside the GDB prompt:
 - **help**
   - Can be used to get information about specific GDB commands, for example
     `help list`.
-
 - **list**
   - List specified function or line. With no argument, lists ten more lines
     after or around previous listing.
-
 - **run**
    - Start debugged the program.
-
 - **set disassembly-flavor**
   - Changes the disassembly flavor. The valid values are "att" and "intel", and
     the default value is "att".
-
 - **disassemble main**
   - Disassemble a specified section of memory.
-
 - **x/s**
   - xamine memory: x/FMT ADDRESS. ADDRESS is an expression for the memory
     address to examine. FMT is a repeat count followed by a format letter and a
     size letter. You can also use the address of operator (`&`) followed by the
     variable name.
-
 - **break**
   - Set breakpoint at specified location.
-
 - **info registers**
   - List of integer registers and their contents, for selected stack frame.
 

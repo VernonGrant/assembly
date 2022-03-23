@@ -1,11 +1,11 @@
 section .data
-	msg    db	"hello, world",0
-	NL     db 	0xa 			; ascii code for new line.
+	msg    db    "hello, world",0
+	NL     db    0xa    ; ascii code for new line.
 section .bss
 section .text
 	global main
 main:
-	mov    rax,	1       ; 1 = write
+	mov    rax, 1       ; 1 = write
 	mov    rdi, 1       ; 1 = to stdout
 	mov    rsi, msg     ; string to display
 	mov    rdx, 12      ; length of the string, without 0
